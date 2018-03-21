@@ -1,0 +1,11 @@
+{
+  "name": "project-coleslaw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://github.com/jordanlapointe/project-coleslaw",
+  "author": "Jordan LaPointe",
+  "license": "All rights reserved.",
+  "dependencies": {
+    "blendid": "^4.4.3"
+  }
+}
