@@ -1,0 +1,58 @@
+// # Typograpgy
+
+// ## Heading
+%heading {
+  margin: 0;
+}
+.heading--xxsmall {
+  @extend %heading;
+  color: $content-light;
+  font-size: $font-xxsmall;
+  text-transform: uppercase;
+}
+.heading--xsmall {
+  @extend %heading;
+  font-size: $font-xsmall;
+  font-weight: 500;
+  line-height: $leading-xsmall;
+}
+.heading--small {
+  @extend %heading;
+  color: $content-light;
+  font-size: $font-small;
+  font-weight: 500;
+  line-height: $leading-small;
+}
+.heading--medium {
+  @extend %heading;
+  color: $content-light;
+  font-size: $font-medium;
+  font-weight: 300;
+  line-height: $leading-medium;
+}
+.heading--large {
+  @extend %heading;
+  font-size: $font-large;
+  line-height: $leading-large;
+}
+.heading--xlarge {
+  @extend %heading;
+  font-size: $font-xlarge;
+  line-height: $leading-xlarge;
+}
+
+// ## Text
+%text {
+  color: $content-dark;
+  font-family: $font-family-paragraph;
+  font-weight: 300;
+  margin: 0;
+}
+.text--medium {
+  @extend %text;
+  font-size: $font-small;
+  line-height: $leading-medium;
+}
+.text--centered {
+  text-align: center;
+}
