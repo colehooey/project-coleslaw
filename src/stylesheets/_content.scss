@@ -1,0 +1,53 @@
+// # Content
+
+.content {
+  h1 {
+    @extend .heading--xlarge;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit * 2;
+    }
+  }
+  h2 {
+    @extend .heading--large;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  h3 {
+    @extend .heading--medium;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  h4 {
+    @extend .heading--small;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  h5 {
+    @extend .heading--xsmall;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  h6 {
+    @extend .heading--xxsmall;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  p {
+    @extend .text--medium;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit * 2;
+    }
+  }
+}
