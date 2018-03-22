@@ -1,0 +1,64 @@
+// # Actions
+
+// Button
+%button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  font-family: $font-family-default;
+  font-weight: 500;
+  font-size: $font-small;
+  line-height: $leading-small;
+  margin: 0;
+}
+.button {
+  @extend %button;
+  background-color: $color-action;
+  border-radius: 1000px;
+  color: #fff;
+  padding: $spacing-unit * 2 $spacing-unit * 6;
+
+  &:hover {
+    background-color: $color-action-dark;
+  }
+  &:active {
+    background-color: $color-action-xdark;
+  }
+}
+.button--secondary {
+  @extend %button;
+  background-color: transparent;
+  color: $color-action;
+  padding: 0;
+
+  &::after {
+    content: '→';
+    display: inline-block;
+    margin-left: $spacing-unit * 2;
+    transition: transform 180ms ease-out;
+  }
+  &:hover {
+    color: $color-action-dark;
+    text-decoration: underline;
+
+    &::after {
+      transform: translateX(10px);
+    }
+  }
+  &:active {
+    color: $color-action-xdark;
+  }
+}
+
+// Link
+.link {
+  color: $color-action;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color-action-dark;
+  }
+  &:active {
+    color: $color-action-xdark;
+  }
+}
