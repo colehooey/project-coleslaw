@@ -7,7 +7,31 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <div style="width: 600px; margin: auto;">
+  <header class="navigation">
+    <h1 class="navigation__title">
+      <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+    </h1>
+    <nav class="navigation__actions">
+      <ul class="navigation__items">
+        <li class="navigation__item is-current-page">
+          <a class="navigation__link" href="#">Page 1</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Page 2</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Page 3</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Page 4</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Page 5</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div style="max-width: 600px; margin: auto;">
     <h1 class="heading--xlarge">Manual Heading Extra Large</h1>
     <h2 class="heading--large">Heading Large</h2>
     <h3 class="heading--medium">Heading Medium</h3>
