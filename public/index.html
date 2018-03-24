@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="stylesheet" href="stylesheets/styleguide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Generate using http://realfavicongenerator.net/ -->
 
@@ -13,96 +14,262 @@
   </head>
   <body>
     
-  <header class="navigation">
-    <h1 class="navigation__title">
-      <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
-    </h1>
-    <nav class="navigation__actions">
-      <ul class="navigation__items">
-        <li class="navigation__item is-current-page">
-          <a class="navigation__link" href="#">Page 1</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 2</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 3</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 4</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 5</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container--large">
-    <h1 class="heading--xlarge">Manual Heading Extra Large</h1>
-    <h2 class="heading--large">Heading Large</h2>
-    <h3 class="heading--medium">Heading Medium</h3>
-    <h4 class="heading--small">Heading Small</h4>
-    <h5 class="heading--xsmall">Heading Extra Small</h5>
-    <h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
-    <p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, <a class="link" href="#">default link</a> ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-    <button class="button">Button Default</button>
-    <br>
-    <button class="button--secondary">Button Secondary</button>
-    <hr>
-    <div class="content">
-      <h1>Content Area Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-      <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
-      <p><button name="button">Button</button></p>
-    </div>
+
+<div class="styleguide">
+  <h1 class="heading--xlarge">Project Coleslaw Styleguide</h1>
+
+
+  <h2 class="heading--large">Navigation</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <header class="navigation">
+  <h1 class="navigation__title">
+    <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+  </h1>
+  <nav class="navigation__actions">
+    <ul class="navigation__items">
+      <li class="navigation__item is-current-page">
+        <a class="navigation__link" href="#">Page 1</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 2</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 3</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 4</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 5</a>
+      </li>
+    </ul>
+  </nav>
+</header>
   </div>
-  <br>
-  <br>
-  <br>
-  <div class="container--large">
-    <div class="split__container">
-      <div class="split--33@large content">
-        <h2>The Content</h2>
-        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-      </div>
-      <div class="split--66@large">
-        <div class="split__container--spacing-large">
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;header class=&quot;navigation&quot;&gt;
+  &lt;h1 class=&quot;navigation__title&quot;&gt;
+    &lt;img class=&quot;navigation__logo&quot; src=&quot;http://placehold.it/296x40&quot; alt=&quot;Company Name&quot;&gt;
+  &lt;/h1&gt;
+  &lt;nav class=&quot;navigation__actions&quot;&gt;
+    &lt;ul class=&quot;navigation__items&quot;&gt;
+      &lt;li class=&quot;navigation__item is-current-page&quot;&gt;
+        &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;navigation__item&quot;&gt;
+        &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;navigation__item&quot;&gt;
+        &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;navigation__item&quot;&gt;
+        &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 4&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;navigation__item&quot;&gt;
+        &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 5&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</pre>
+</div>
+
+
+
+  <h2 class="heading--large">Headings and Paragraphs</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <h1 class="heading--xlarge">Heading Extra Large</h1>
+<h2 class="heading--large">Heading Large</h2>
+<h3 class="heading--medium">Heading Medium</h3>
+<h4 class="heading--small">Heading Small</h4>
+<h5 class="heading--xsmall">Heading Extra Small</h5>
+<h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
+<p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;h1 class=&quot;heading--xlarge&quot;&gt;Heading Extra Large&lt;/h1&gt;
+&lt;h2 class=&quot;heading--large&quot;&gt;Heading Large&lt;/h2&gt;
+&lt;h3 class=&quot;heading--medium&quot;&gt;Heading Medium&lt;/h3&gt;
+&lt;h4 class=&quot;heading--small&quot;&gt;Heading Small&lt;/h4&gt;
+&lt;h5 class=&quot;heading--xsmall&quot;&gt;Heading Extra Small&lt;/h5&gt;
+&lt;h6 class=&quot;heading--xxsmall&quot;&gt;Heading Extra Extra Small&lt;/h6&gt;
+&lt;p class=&quot;text--medium&quot;&gt;Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
+</pre>
+</div>
+
+
+
+  <h2 class="heading--large">Content Area</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="content">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
+  <p><button name="button">Button</button></p>
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;content&quot;&gt;
+  &lt;h1&gt;Heading 1&lt;/h1&gt;
+  &lt;h2&gt;Heading 2&lt;/h2&gt;
+  &lt;h3&gt;Heading 3&lt;/h3&gt;
+  &lt;h4&gt;Heading 4&lt;/h4&gt;
+  &lt;h5&gt;Heading 5&lt;/h5&gt;
+  &lt;h6&gt;Heading 6&lt;/h6&gt;
+  &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
+  &lt;p&gt;Praesent scelerisque, libero sed &lt;a href=&quot;#&quot;&gt;lobortis efficitur&lt;/a&gt;. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.&lt;/p&gt;
+  &lt;p&gt;&lt;button name=&quot;button&quot;&gt;Button&lt;/button&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+
+
+  <h2 class="heading--large">Actions</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div>
+  <button class="button">Button Default</button>
+</div>
+<div>
+  <button class="button--secondary">Button Secondary</button>
+</div>
+<div>
+  Please see <a class="link" href="#">Terms and conditions</a>.
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div&gt;
+  &lt;button class=&quot;button&quot;&gt;Button Default&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;button class=&quot;button--secondary&quot;&gt;Button Secondary&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  Please see &lt;a class=&quot;link&quot; href=&quot;#&quot;&gt;Terms and conditions&lt;/a&gt;.
+&lt;/div&gt;
+</pre>
+</div>
+
+
+
+  <h2 class="heading--large">Container</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="container--large">
+  <img src="http://placehold.it/3000x800" alt="">
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;container--large&quot;&gt;
+  &lt;img src=&quot;http://placehold.it/3000x800&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+
+
+  <h2 class="heading--large">Split Layout</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="container--large">
+  <div class="split__container">
+    <div class="split--33@large content">
+      <h2>The Content</h2>
+      <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+    </div>
+    <div class="split--66@large">
+      <div class="split__container--spacing-large">
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
         </div>
       </div>
     </div>
   </div>
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;container--large&quot;&gt;
+  &lt;div class=&quot;split__container&quot;&gt;
+    &lt;div class=&quot;split--33@large content&quot;&gt;
+      &lt;h2&gt;The Content&lt;/h2&gt;
+      &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;split--66@large&quot;&gt;
+      &lt;div class=&quot;split__container--spacing-large&quot;&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;text--centered split--50@medium split--25@large&quot;&gt;
+          &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/192x45&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+
+</div>
+
 
     
       <script src="javascripts/app.js"></script>
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     
   </body>
 </html>
