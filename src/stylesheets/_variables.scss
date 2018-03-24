@@ -11,14 +11,9 @@ $color-action-xdark: #0038A3;
 $color-background-shaded: #F1F4F6;
 
 // ## Content color
+$content-xlight: #A4AFBA;
 $content-light: #7A828A;
 $content-dark: #212F3C;
-
-$content-inverse-xlight: rgba(255,255,255,0.12);
-$content-inverse-light: rgba(255,255,255,0.38);
-$content-inverse-dark: rgba(255,255,255,0.54);
-$content-inverse-xdark: rgba(255,255,255,0.87);
-$content-inverse-xxdark: rgba(255,255,255,1);
 
 // ## Font Size
 $font-xxsmall: 12rem / 16;
@@ -29,7 +24,7 @@ $font-large: 35rem / 16;
 $font-xlarge: 45rem / 16;
 $font-xxlarge: 64rem / 16;
 
-// $$ Font Family
+// ## Font Family
 $font-family-default: "Catamaran", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-paragraph: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
