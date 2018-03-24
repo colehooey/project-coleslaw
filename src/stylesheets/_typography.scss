@@ -7,6 +7,17 @@
   a & {
     color: $color-action;
   }
+  a:hover & {
+    color: $color-action-dark;
+  }
+  a:active & {
+    color: $color-action-xdark;
+  }
+  .theme--dark &,
+  a:hover .theme--dark &,
+  a:active .theme--dark & {
+    color: #fff;
+  }
 }
 .heading--xxsmall {
   @extend %heading;
@@ -51,6 +62,10 @@
   font-family: $font-family-paragraph;
   font-weight: 300;
   margin: 0;
+
+  .theme--dark & {
+    color: $content-xlight;
+  }
 }
 .text--medium {
   @extend %text;

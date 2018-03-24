@@ -46,8 +46,17 @@
       transform: translateX(10px);
     }
   }
+  a:active &,
   &:active {
     color: $color-action-xdark;
+  }
+  .theme--dark & {
+    color: #fff;
+  }
+  a:hover .theme--dark &,
+  a:active .theme--dark & {
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
