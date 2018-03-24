@@ -3,6 +3,10 @@
 // ## Heading
 %heading {
   margin: 0;
+
+  a & {
+    color: $color-action;
+  }
 }
 .heading--xxsmall {
   @extend %heading;

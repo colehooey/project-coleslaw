@@ -53,7 +53,7 @@
   a {
     @extend .link;
   }
-  button {
+  button:not([class*="button"]) {
     @extend .button;
   }
 }
