@@ -7,91 +7,130 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <header class="navigation">
-    <h1 class="navigation__title">
-      <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
-    </h1>
-    <nav class="navigation__actions">
-      <ul class="navigation__items">
-        <li class="navigation__item is-current-page">
-          <a class="navigation__link" href="#">Page 1</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 2</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 3</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 4</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page 5</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container--large">
-    <h1 class="heading--xlarge">Manual Heading Extra Large</h1>
-    <h2 class="heading--large">Heading Large</h2>
-    <h3 class="heading--medium">Heading Medium</h3>
-    <h4 class="heading--small">Heading Small</h4>
-    <h5 class="heading--xsmall">Heading Extra Small</h5>
-    <h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
-    <p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, <a class="link" href="#">default link</a> ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-    <button class="button">Button Default</button>
-    <br>
-    <button class="button--secondary">Button Secondary</button>
-    <hr>
-    <div class="content">
-      <h1>Content Area Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-      <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
-      <p><button name="button">Button</button></p>
+
+<div class="styleguide">
+  <h1 class="heading--xlarge">Project Coleslaw Styleguide</h1>
+
+
+  <h2 class="heading--large">Navigation</h1>
+  {% call example() -%}
+<header class="navigation">
+  <h1 class="navigation__title">
+    <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+  </h1>
+  <nav class="navigation__actions">
+    <ul class="navigation__items">
+      <li class="navigation__item is-current-page">
+        <a class="navigation__link" href="#">Page 1</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 2</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 3</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 4</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Page 5</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Headings and Paragraphs</h1>
+  {% call example() -%}
+<h1 class="heading--xlarge">Heading Extra Large</h1>
+<h2 class="heading--large">Heading Large</h2>
+<h3 class="heading--medium">Heading Medium</h3>
+<h4 class="heading--small">Heading Small</h4>
+<h5 class="heading--xsmall">Heading Extra Small</h5>
+<h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
+<p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Content Area</h1>
+  {% call example() -%}
+<div class="content">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
+  <p><button name="button">Button</button></p>
+</div>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Actions</h1>
+  {% call example() -%}
+<div>
+  <button class="button">Button Default</button>
+</div>
+<div>
+  <button class="button--secondary">Button Secondary</button>
+</div>
+<div>
+  Please see <a class="link" href="#">Terms and conditions</a>.
+</div>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Container</h1>
+  {% call example() -%}
+<div class="container--large">
+  <img src="http://placehold.it/3000x800" alt="">
+</div>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Split Layout</h1>
+  {% call example() -%}
+<div class="container--large">
+  <div class="split__container">
+    <div class="split--33@large content">
+      <h2>The Content</h2>
+      <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="container--large">
-    <div class="split__container">
-      <div class="split--33@large content">
-        <h2>The Content</h2>
-        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-      </div>
-      <div class="split--66@large">
-        <div class="split__container--spacing-large">
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
-          <div class="text--centered split--50@medium split--25@large">
-            <img class="image--centered" src="http://placehold.it/192x45" alt="">
-          </div>
+    <div class="split--66@large">
+      <div class="split__container--spacing-large">
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
+        </div>
+        <div class="text--centered split--50@medium split--25@large">
+          <img class="image--centered" src="http://placehold.it/192x45" alt="">
         </div>
       </div>
     </div>
   </div>
+</div>
+  {%- endcall %}
+
+</div>
+
 {% endblock %}

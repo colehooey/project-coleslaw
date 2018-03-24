@@ -1,6 +1,10 @@
-{% macro sprite(id, viewBox, classes) %}
-  {% set viewBox = viewBox or "0 0 1 1"%}
-  <span class='sprite -{{id}} {{classes}}'>
-    <svg viewBox="{{viewBox}}"><use xlink:href='images/icons.svg#{{id}}'></use></svg>
-  </span>
-{% endmacro %}
+{% macro example() %}
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    {{ caller() }}
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+{{ caller().toString() | trim | escape }}
+</pre>
+</div>
+{% endmacro%}
