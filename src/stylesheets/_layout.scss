@@ -1,0 +1,72 @@
+// # Layout
+
+$column-spacing-medium: 25px / 2;
+$column-spacing-large: 25px;
+
+// ## Container
+.container--large {
+  margin: auto;
+  max-width: $width-large;
+}
+
+// ## Split
+.split__container,
+.split__container--spacing-large {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@mixin split($width) {
+  margin-bottom: $spacing-unit * 4;
+  width: calc(#{$width} - #{$column-spacing-medium});
+
+  .split__container--spacing-large & {
+    width: calc(#{$width} - #{$column-spacing-large});
+  }
+}
+[class*="split--"] {
+  @include split(100%);
+}
+.split--66 {
+  @include split(66.666%);
+}
+.split--66\@large {
+  @media (min-width: $breakpoint-large) {
+    @include split(66.666%);
+  }
+}
+.split--60 {
+  @include split(60%);
+}
+.split--50 {
+  @include split(50%);
+}
+.split--50\@medium {
+  @media (min-width: $breakpoint-medium) {
+    @include split(50%);
+  }
+}
+.split--50\@large {
+  @media (min-width: $breakpoint-large) {
+    @include split(50%);
+  }
+}
+.split--40 {
+  @include split(40%);
+}
+.split--33 {
+  @include split(33.333%);
+}
+.split--33\@large {
+  @media (min-width: $breakpoint-large) {
+    @include split(33.333%);
+  }
+}
+.split--25 {
+  @include split(25%);
+}
+.split--25\@large {
+  @media (min-width: $breakpoint-large) {
+    @include split(25%);
+  }
+}
