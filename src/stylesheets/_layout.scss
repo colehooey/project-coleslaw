@@ -17,23 +17,43 @@ $column-spacing-large: 25px;
   justify-content: space-between;
 }
 @mixin split($width) {
-  margin-bottom: $spacing-unit * 4;
-  width: calc(#{$width} - #{$column-spacing-medium});
+  .split__container > & {
+    margin-bottom: $spacing-unit * 4;
+    width: calc(#{$width} - #{$column-spacing-medium});
 
-  .split__container--spacing-large & {
+    &\@medium {
+      @media (min-width: $breakpoint-medium) {
+        width: calc(#{$width} - #{$column-spacing-medium});
+      }
+    }
+    &\@large {
+      @media (min-width: $breakpoint-large) {
+        width: calc(#{$width} - #{$column-spacing-medium});
+      }
+    }
+  }
+  .split__container--spacing-large > & {
+    margin-bottom: $spacing-unit * 4;
     width: calc(#{$width} - #{$column-spacing-large});
+
+    &\@medium {
+      @media (min-width: $breakpoint-medium) {
+        width: calc(#{$width} - #{$column-spacing-large});
+      }
+    }
+    &\@large {
+      @media (min-width: $breakpoint-large) {
+        width: calc(#{$width} - #{$column-spacing-large});
+      }
+    }
   }
 }
 [class*="split--"] {
-  @include split(100%);
+  margin-bottom: $spacing-unit * 4;
+  width: calc(100%);
 }
 .split--66 {
   @include split(66.666%);
-}
-.split--66\@large {
-  @media (min-width: $breakpoint-large) {
-    @include split(66.666%);
-  }
 }
 .split--60 {
   @include split(60%);
@@ -41,32 +61,12 @@ $column-spacing-large: 25px;
 .split--50 {
   @include split(50%);
 }
-.split--50\@medium {
-  @media (min-width: $breakpoint-medium) {
-    @include split(50%);
-  }
-}
-.split--50\@large {
-  @media (min-width: $breakpoint-large) {
-    @include split(50%);
-  }
-}
 .split--40 {
   @include split(40%);
 }
 .split--33 {
   @include split(33.333%);
 }
-.split--33\@large {
-  @media (min-width: $breakpoint-large) {
-    @include split(33.333%);
-  }
-}
 .split--25 {
   @include split(25%);
-}
-.split--25\@large {
-  @media (min-width: $breakpoint-large) {
-    @include split(25%);
-  }
 }
