@@ -1,9 +1,14 @@
 // # Variables
 
+// ## Breakpoint
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
+
 // ## Color
 $color-action: #0058FF;
 $color-action-dark: #0046CC;
 $color-action-xdark: #0038A3;
+$color-background-shaded: #F1F4F6;
 
 // ## Content color
 $content-light: #7A828A;
@@ -38,3 +43,6 @@ $leading-xlarge: 45rem / 16;
 
 // ## Spacing unit
 $spacing-unit: 5rem / 16;
+
+// ## Width
+$width-large: 1150px;

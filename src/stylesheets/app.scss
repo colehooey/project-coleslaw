@@ -7,3 +7,12 @@
 @import "actions";
 @import "content";
 @import "navigation";
+@import "layout";
+
+.background--shaded {
+  background-color: $color-background-shaded;
+}
+
+.image--centered {
+  margin: auto;
+}
