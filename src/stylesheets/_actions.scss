@@ -37,6 +37,7 @@
     margin-left: $spacing-unit * 2;
     transition: transform 180ms ease-out;
   }
+  a:hover &,
   &:hover {
     color: $color-action-dark;
     text-decoration: underline;

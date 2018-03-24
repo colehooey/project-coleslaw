@@ -8,6 +8,9 @@ $column-spacing-large: 25px;
   margin: auto;
   max-width: $width-large;
 }
+.container--padded {
+  padding: $spacing-unit * 5;
+}
 
 // ## Split
 .split__container,

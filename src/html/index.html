@@ -64,7 +64,7 @@
   <h6>Heading 6</h6>
   <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
-  <p><button name="button">Button</button></p>
+  <p><button>Button</button></p>
 </div>
   {%- endcall %}
 
@@ -127,6 +127,42 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+  {%- endcall %}
+
+
+  <h2 class="heading--large">Clickable Sections</h1>
+  {% call example() -%}
+<div class="container--large">
+  <div class="split__container">
+    <a class="background--shaded container--padded split--33@large" href="#">
+      <div class="content">
+        <h3>The Content</h3>
+        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+        <p>
+          <span class="button--secondary">Action</span>
+        </p>
+      </div>
+    </a>
+    <a class="background--shaded container--padded split--33@large" href="#">
+      <div class="content">
+        <h3>The Content</h3>
+        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
+        <p>
+          <span class="button--secondary">Action</span>
+        </p>
+      </div>
+    </a>
+    <a class="background--shaded container--padded split--33@large" href="#">
+      <div class="content">
+        <h3>The Content</h3>
+        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+        <p>
+          <span class="button--secondary">Action</span>
+        </p>
+      </div>
+    </a>
   </div>
 </div>
   {%- endcall %}

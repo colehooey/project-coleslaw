@@ -1,6 +1,14 @@
 // # Page
 
+* {
+  box-sizing: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
 body {
+  box-sizing: border-box;
   color: $content-dark;
   font-family: $font-family-default;
   margin: 0;
