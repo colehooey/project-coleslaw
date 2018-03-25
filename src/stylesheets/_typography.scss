@@ -67,11 +67,19 @@
     color: $content-xlight;
   }
 }
+.text--bold {
+  font-weight: 700;
+}
+.text--centered {
+  text-align: center;
+}
+.text--small {
+  @extend %text;
+  font-size: $font-xsmall;
+  line-height: $leading-small;
+}
 .text--medium {
   @extend %text;
   font-size: $font-small;
   line-height: $leading-medium;
-}
-.text--centered {
-  text-align: center;
 }
