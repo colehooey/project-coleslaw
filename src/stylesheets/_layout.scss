@@ -8,7 +8,10 @@ $column-spacing-large: 25px;
   margin: auto;
   max-width: $width-large;
 }
-.container--padded {
+.container--small-padding {
+  padding: $spacing-unit * 2;
+}
+.container--medium-padding {
   padding: $spacing-unit * 5;
 }
 
