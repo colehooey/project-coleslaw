@@ -14,6 +14,9 @@ $column-spacing-large: 25px;
 .container--medium-padding {
   padding: $spacing-unit * 5;
 }
+.container--large-padding {
+  padding: $spacing-unit * 10;
+}
 
 // ## Split
 .split__container,

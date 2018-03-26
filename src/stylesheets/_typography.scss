@@ -1,5 +1,15 @@
 // # Typograpgy
 
+// ## Divider
+.divider {
+  background-color: $color-action;
+  border: none;
+  height: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  width: $spacing-unit * 10;
+}
+
 // ## Heading
 %heading {
   margin: 0;

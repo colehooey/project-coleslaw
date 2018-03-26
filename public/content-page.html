@@ -1,14 +1,16 @@
-{% from 'macros/helpers.html' import example %}
+
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <title></title>
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/styleguide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include "shared/app-icons.html" %}
-    {% block head %}{% endblock %}
+    <!-- Generate using http://realfavicongenerator.net/ -->
+
+
+    
   </head>
   <body>
     <header class="navigation">
@@ -29,10 +31,53 @@
         </ul>
       </nav>
     </header>
-    {% block content %}{% endblock %}
-    {% block javascript %}
+    
+
+<div class="container--large">
+  <div class="split__container">
+    <div class="split--40@large">
+      <img src="http://placehold.it/343x341" alt="">
+    </div>
+    <div class="content split--60@large">
+      <h1>Content</h1>
+      <h3>Content</h3>
+      <hr>
+      <h2>Content</h2>
+      <p>Content</p>
+      <h2>Content</h2>
+      <p>Content</p>
+      <h2>Content</h2>
+      <p>Content</p>
+    </div>
+  </div>
+</div>
+
+<div class="theme--dark">
+  <div class="container--large container--large-padding content">
+    <div class="split__container">
+      <div class="split--66">
+        <h1>Content</h1>
+        <p>
+          <button>Action</button>
+        </p>
+      </div>
+      <div class="split--33">
+        <img class="image--centered" src="http://placehold.it/200x300" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container--small-padding theme--dark">
+  <p class="text--bold text--centered text--small">
+    Jordan LaPointe ©2018
+  </p>
+</footer>
+
+
+    
       <script src="javascripts/app.js"></script>
       <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    {% endblock %}
+    
   </body>
 </html>

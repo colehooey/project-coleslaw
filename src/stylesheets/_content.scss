@@ -43,6 +43,14 @@
       margin-bottom: $spacing-unit;
     }
   }
+  hr {
+    @extend .divider;
+    margin-top: $spacing-unit * 6;
+
+    &:not(:last-child) {
+      margin-bottom: $spacing-unit * 6;
+    }
+  }
   p {
     @extend .text--medium;
 
