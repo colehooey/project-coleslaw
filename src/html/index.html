@@ -95,6 +95,16 @@
 </div>
   {%- endcall %}
 
+  <h2 class="heading--large">Form Fields</h1>
+  {% call example() -%}
+<label class="label" for="form-field-example">Form Field</label>
+<input class="field" type="text" id="form-field-example">
+<label class="label" for="form-field-example-2">Form Field with Error</label>
+<input class="field has-error" type="text" id="form-field-example-2">
+<label class="label" for="textarea-example">Textarea</label>
+<textarea class="field" id="textarea-example"></textarea>
+  {%- endcall %}
+
   <h2 class="heading--large">Navigation</h1>
   {% call example() -%}
 <header class="navigation">
@@ -125,17 +135,22 @@
 
   <h2 class="heading--large">Spacing</h1>
   {% call example() -%}
-<p class="spacing--bottom-xxlarge">Spacing bottom xxlarge</p>
-<p class="spacing--bottom-xlarge">Spacing bottom xlarge</p>
-<p class="spacing--bottom-large">Spacing bottom large</p>
-<p class="spacing--bottom-medium">Spacing bottom medium</p>
-<p class="spacing--bottom-small">Spacing bottom small</p>
-
-<p class="spacing--top-small">Spacing top small</p>
-<p class="spacing--top-medium">Spacing top medium</p>
-<p class="spacing--top-large">Spacing top large</p>
-<p class="spacing--top-xlarge">Spacing top xlarge</p>
-<p class="spacing--top-xxlarge">Spacing top xxlarge</p>
+<div class="split__container">
+  <div class="split--50">
+    <p class="spacing--bottom-xxlarge">Spacing bottom extra extra large</p>
+    <p class="spacing--bottom-xlarge">Spacing bottom extra large</p>
+    <p class="spacing--bottom-large">Spacing bottom large</p>
+    <p class="spacing--bottom-medium">Spacing bottom medium</p>
+    <p class="spacing--bottom-small">Spacing bottom small</p>
+  </div>
+  <div class="split--50">
+    <p class="spacing--top-small">Spacing top small</p>
+    <p class="spacing--top-medium">Spacing top medium</p>
+    <p class="spacing--top-large">Spacing top large</p>
+    <p class="spacing--top-xlarge">Spacing top extra large</p>
+    <p class="spacing--top-xxlarge">Spacing top extra extra large</p>
+  </div>
+</div>
   {%- endcall %}
 
 
