@@ -18,12 +18,45 @@ $column-spacing-large: 25px;
   padding: $spacing-unit * 10;
 }
 
+// ## Spacing
+.spacing--bottom-small {
+  margin-bottom: $spacing-unit * 2;
+}
+.spacing--bottom-medium {
+  margin-bottom: $spacing-unit * 5;
+}
+.spacing--bottom-large {
+  margin-bottom: $spacing-unit * 10;
+}
+.spacing--bottom-xlarge {
+  margin-bottom: $spacing-unit * 15;
+}
+.spacing--bottom-xxlarge {
+  margin-bottom: $spacing-unit * 25;
+}
+.spacing--top-small {
+  margin-top: $spacing-unit * 2;
+}
+.spacing--top-medium {
+  margin-top: $spacing-unit * 5;
+}
+.spacing--top-large {
+  margin-top: $spacing-unit * 10;
+}
+.spacing--top-xlarge {
+  margin-top: $spacing-unit * 15;
+}
+.spacing--top-xxlarge {
+  margin-top: $spacing-unit * 25;
+}
+
 // ## Split
 .split__container,
 .split__container--spacing-large {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: -$spacing-unit * 4;
 }
 @mixin split($width) {
   .split__container > & {

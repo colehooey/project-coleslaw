@@ -1,67 +1,79 @@
 // # Content
 
 .content {
-  h1 {
-    @extend .heading--xlarge;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit * 2;
-    }
-  }
-  h2 {
-    @extend .heading--large;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit;
-    }
-  }
-  h3 {
-    @extend .heading--medium;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit;
-    }
-  }
-  h4 {
-    @extend .heading--small;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit;
-    }
-  }
-  h5 {
-    @extend .heading--xsmall;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit;
-    }
-  }
-  h6 {
-    @extend .heading--xxsmall;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit;
-    }
-  }
-  hr {
-    @extend .divider;
-    margin-top: $spacing-unit * 6;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit * 6;
-    }
-  }
-  p {
-    @extend .text--medium;
-
-    &:not(:last-child) {
-      margin-bottom: $spacing-unit * 2;
-    }
-  }
   a {
     @extend .link;
   }
   button:not([class*="button"]) {
     @extend .button;
+  }
+  h1 {
+    @extend .heading--xlarge;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
+  h2 {
+    @extend .heading--large;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 6;
+    }
+  }
+  h3 {
+    @extend .heading--medium;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
+  h4 {
+    @extend .heading--small;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit;
+    }
+  }
+  h5 {
+    @extend .heading--xsmall;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit;
+    }
+  }
+  h6 {
+    @extend .heading--xxsmall;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit;
+    }
+  }
+  hr {
+    @extend .divider;
+    margin-bottom: $spacing-unit * 7;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 7;
+    }
+  }
+  p {
+    @extend .text--medium;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit;
+    }
+  }
+  ul {
+    @extend .list;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
+  .split__container {
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 3;
+    }
   }
 }
