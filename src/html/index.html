@@ -12,6 +12,89 @@
   <h1 class="heading--xlarge">Project Coleslaw Styleguide</h1>
 
 
+  <h2 class="heading--large">Actions</h1>
+  {% call example() -%}
+<div>
+  <button class="button">Button Default</button>
+</div>
+<div>
+  <button class="button--secondary">Button Secondary</button>
+</div>
+<div>
+  Please see <a class="link" href="#">Terms and conditions</a>.
+</div>
+  {%- endcall %}
+
+  <h2 class="heading--large">Clickable Sections</h1>
+  {% call example() -%}
+<div class="container--large">
+  <div class="split__container">
+    <a class="background--shaded container--medium-padding split--33@large" href="#">
+      <div class="content">
+        <h3>The Content</h3>
+        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+        <p>
+          <span class="button--secondary">Action</span>
+        </p>
+      </div>
+    </a>
+    <a class="background--shaded container--medium-padding split--33@large" href="#">
+      <div class="content">
+        <h3>The Content</h3>
+        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
+        <p>
+          <span class="button--secondary">Action</span>
+        </p>
+      </div>
+    </a>
+    <a class="split--33@large" href="#">
+      <div class="container--medium-padding theme--dark">
+        <div class="content">
+          <h3>The Content</h3>
+          <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+          <p>
+            <span class="button--secondary">Action</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+  {%- endcall %}
+
+  <h2 class="heading--large">Headings and Paragraphs</h1>
+  {% call example() -%}
+<h1 class="heading--xlarge">Heading Extra Large</h1>
+<h2 class="heading--large">Heading Large</h2>
+<h3 class="heading--medium">Heading Medium</h3>
+<h4 class="heading--small">Heading Small</h4>
+<h5 class="heading--xsmall">Heading Extra Small</h5>
+<h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
+<p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  {%- endcall %}
+
+  <h2 class="heading--large">Container</h1>
+  {% call example() -%}
+<div class="container--large">
+<img src="http://placehold.it/3000x800" alt="">
+</div>
+  {%- endcall %}
+
+  <h2 class="heading--large">Content Area</h1>
+  {% call example() -%}
+<div class="content">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
+  <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
+  <p><button>Button</button></p>
+</div>
+  {%- endcall %}
+
   <h2 class="heading--large">Navigation</h1>
   {% call example() -%}
 <header class="navigation">
@@ -40,54 +123,19 @@
 </header>
   {%- endcall %}
 
-
-  <h2 class="heading--large">Headings and Paragraphs</h1>
+  <h2 class="heading--large">Spacing</h1>
   {% call example() -%}
-<h1 class="heading--xlarge">Heading Extra Large</h1>
-<h2 class="heading--large">Heading Large</h2>
-<h3 class="heading--medium">Heading Medium</h3>
-<h4 class="heading--small">Heading Small</h4>
-<h5 class="heading--xsmall">Heading Extra Small</h5>
-<h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
-<p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-  {%- endcall %}
+<p class="spacing--bottom-xxlarge">Spacing bottom xxlarge</p>
+<p class="spacing--bottom-xlarge">Spacing bottom xlarge</p>
+<p class="spacing--bottom-large">Spacing bottom large</p>
+<p class="spacing--bottom-medium">Spacing bottom medium</p>
+<p class="spacing--bottom-small">Spacing bottom small</p>
 
-
-  <h2 class="heading--large">Content Area</h1>
-  {% call example() -%}
-<div class="content">
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6>Heading 6</h6>
-  <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-  <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
-  <p><button>Button</button></p>
-</div>
-  {%- endcall %}
-
-
-  <h2 class="heading--large">Actions</h1>
-  {% call example() -%}
-<div>
-  <button class="button">Button Default</button>
-</div>
-<div>
-  <button class="button--secondary">Button Secondary</button>
-</div>
-<div>
-  Please see <a class="link" href="#">Terms and conditions</a>.
-</div>
-  {%- endcall %}
-
-
-  <h2 class="heading--large">Container</h1>
-  {% call example() -%}
-<div class="container--large">
-  <img src="http://placehold.it/3000x800" alt="">
-</div>
+<p class="spacing--top-small">Spacing top small</p>
+<p class="spacing--top-medium">Spacing top medium</p>
+<p class="spacing--top-large">Spacing top large</p>
+<p class="spacing--top-xlarge">Spacing top xlarge</p>
+<p class="spacing--top-xxlarge">Spacing top xxlarge</p>
   {%- endcall %}
 
 
@@ -139,46 +187,6 @@
   </div>
 </div>
   {%- endcall %}
-
-
-  <h2 class="heading--large">Clickable Sections</h1>
-  {% call example() -%}
-<div class="container--large">
-  <div class="split__container">
-    <a class="background--shaded container--medium-padding split--33@large" href="#">
-      <div class="content">
-        <h3>The Content</h3>
-        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-        <p>
-          <span class="button--secondary">Action</span>
-        </p>
-      </div>
-    </a>
-    <a class="background--shaded container--medium-padding split--33@large" href="#">
-      <div class="content">
-        <h3>The Content</h3>
-        <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
-        <p>
-          <span class="button--secondary">Action</span>
-        </p>
-      </div>
-    </a>
-    <a class="split--33@large" href="#">
-      <div class="container--medium-padding theme--dark">
-        <div class="content">
-          <h3>The Content</h3>
-          <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
-          <p>
-            <span class="button--secondary">Action</span>
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-  {%- endcall %}
-
-</div>
 
 </div>
 
