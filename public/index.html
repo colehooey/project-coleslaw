@@ -13,6 +13,24 @@
     
   </head>
   <body>
+    <header class="navigation">
+      <h1 class="navigation__title">
+        <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+      </h1>
+      <nav class="navigation__actions">
+        <ul class="navigation__items">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/">Styleguide</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/homepage.html">Homepage</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/content-page.html">Content Page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     
 
 <div class="styleguide">
@@ -181,8 +199,49 @@
 </div>
 
 
+  <h2 class="heading--large">Spacing</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <p class="spacing--bottom-xxlarge">Spacing bottom xxlarge</p>
+<p class="spacing--bottom-xlarge">Spacing bottom xlarge</p>
+<p class="spacing--bottom-large">Spacing bottom large</p>
+<p class="spacing--bottom-medium">Spacing bottom medium</p>
+<p class="spacing--bottom-small">Spacing bottom small</p>
+
+<p class="spacing--top-small">Spacing top small</p>
+<p class="spacing--top-medium">Spacing top medium</p>
+<p class="spacing--top-large">Spacing top large</p>
+<p class="spacing--top-xlarge">Spacing top xlarge</p>
+<p class="spacing--top-xxlarge">Spacing top xxlarge</p>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;p class=&quot;spacing--bottom-xxlarge&quot;&gt;Spacing bottom xxlarge&lt;/p&gt;
+&lt;p class=&quot;spacing--bottom-xlarge&quot;&gt;Spacing bottom xlarge&lt;/p&gt;
+&lt;p class=&quot;spacing--bottom-large&quot;&gt;Spacing bottom large&lt;/p&gt;
+&lt;p class=&quot;spacing--bottom-medium&quot;&gt;Spacing bottom medium&lt;/p&gt;
+&lt;p class=&quot;spacing--bottom-small&quot;&gt;Spacing bottom small&lt;/p&gt;
+
+&lt;p class=&quot;spacing--top-small&quot;&gt;Spacing top small&lt;/p&gt;
+&lt;p class=&quot;spacing--top-medium&quot;&gt;Spacing top medium&lt;/p&gt;
+&lt;p class=&quot;spacing--top-large&quot;&gt;Spacing top large&lt;/p&gt;
+&lt;p class=&quot;spacing--top-xlarge&quot;&gt;Spacing top xlarge&lt;/p&gt;
+&lt;p class=&quot;spacing--top-xxlarge&quot;&gt;Spacing top xxlarge&lt;/p&gt;
+</pre>
+</div>
+
+
 
   <h2 class="heading--large">Split Layout</h1>
+  <p>Available sizes:</p>
+  <ul>
+    <li>split--66</li>
+    <li>split--60</li>
+    <li>split--50</li>
+    <li>split--40</li>
+    <li>split--33</li>
+    <li>split--25</li>
+  </ul>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -341,13 +400,46 @@
 </div>
 
 
+
+  <h2 class="heading--large">Background Positioning</h1>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="background-area">
+  <div class="container--large">
+      <div class="split__container">
+        <div class="split--66">
+          Content
+        </div>
+      </div>
+  </div>
+</div>
+<style>
+  .background-area {
+    background-image: url(http://placehold.it/748x466);
+  }
+</style>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;background-area&quot;&gt;
+  &lt;div class=&quot;container--large&quot;&gt;
+      &lt;div class=&quot;split__container&quot;&gt;
+        &lt;div class=&quot;split--66&quot;&gt;
+          Content
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .background-area {
+    background-image: url(http://placehold.it/748x466);
+  }
+&lt;/style&gt;
+</pre>
 </div>
 
-<footer class="container--small-padding theme--dark">
-  <p class="text--bold text--centered text--small">
-    Jordan LaPointe ©2018
-  </p>
-</footer>
+
+</div>
 
 
     

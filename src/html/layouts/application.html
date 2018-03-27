@@ -11,6 +11,24 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    <header class="navigation">
+      <h1 class="navigation__title">
+        <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+      </h1>
+      <nav class="navigation__actions">
+        <ul class="navigation__items">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/">Styleguide</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/homepage.html">Homepage</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/content-page.html">Content Page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     {% block content %}{% endblock %}
     {% block javascript %}
       <script src="javascripts/app.js"></script>
