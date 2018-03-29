@@ -1,0 +1,32 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+
+<div class="contact-page js-page-content split__container--spacing-none">
+  <div class="contact-page__form-panel container--small-padding container--medium-padding@medium container--large-padding@large split--50@medium">
+    <h1>Contact</h1>
+    <button class="button--bare contact-page__close js-modal-close">×</button>
+    <label class="label" for="name-field">Name</label>
+    <input class="field" type="text" id="name-field">
+    <label class="label" for="company-field">Company</label>
+    <input class="field" type="text" id="company-field">
+    <label class="label" for="email-field">Email</label>
+    <input class="field" type="email" id="email-field">
+    <label class="label" for="message-field">Message</label>
+    <textarea class="field" id="message-field"></textarea>
+    <button class="button spacing--top-medium" type="submit">Send</button>
+  </div>
+  <div class="contact-page__info-panel split--50@medium theme--dark">
+    <div class="contact-page__image"></div>
+    <div class="contact-page__info-content container--small-padding content container--large-padding@medium">
+      <h3>Heading</h3>
+      <p><a class="link--with-arrow" href="#">Content</a></p>
+      <h3>Heading</h3>
+      <p><a class="link--with-arrow" href="#">Content</a></p>
+      <h3>Heading</h3>
+      <p><a class="link--with-arrow" href="#">Content</a></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

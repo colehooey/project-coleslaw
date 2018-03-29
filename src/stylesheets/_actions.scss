@@ -72,3 +72,26 @@
     color: $color-action-xdark;
   }
 }
+.link--with-arrow {
+  color: $color-action;
+  text-decoration: none;
+
+  &::after {
+    content: '→';
+    display: inline-block;
+    margin-left: $spacing-unit * 2;
+    transition: transform 180ms ease-out;
+  }
+  &:hover {
+    color: $color-action-dark;
+
+    &::after {
+      transform: translateX(10px);
+    }
+  }
+  .theme--dark &,
+  .theme--dark &:hover,
+  .theme--dark &:active {
+    color: #fff;
+  }
+}
