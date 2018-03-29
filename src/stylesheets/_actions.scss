@@ -25,6 +25,12 @@
     background-color: $color-action-xdark;
   }
 }
+.button--bare {
+  @extend %button;
+  background-color: transparent;
+  color: $color-action;
+  padding: 0;
+}
 .button--secondary {
   @extend %button;
   background-color: transparent;

@@ -1,0 +1,23 @@
+// # Modal
+
+.modal {
+  animation: fade-in 600ms ease-out;
+  background-color: #151F29;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__page-container {
+  overflow: hidden;
+}
+
+// ## Animations
+@keyframes fade-in {
+  from {
+    background-color: rgba(#151F29, 0);
+  }
+  to {
+    background-color: rgba(#151F29, 1);
+  }
+}
