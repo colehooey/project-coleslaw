@@ -3,4 +3,8 @@
 .theme--dark {
   background-color: $content-dark;
   color: $content-xlight;
+
+  & + & {
+    border-top: 1px solid $content-light;
+  }
 }

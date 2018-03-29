@@ -54,6 +54,10 @@
   font-size: $font-medium;
   font-weight: 300;
   line-height: $leading-medium;
+
+  .theme--dark & {
+    color: $content-xlight;
+  }
 }
 .heading--large {
   @extend %heading;

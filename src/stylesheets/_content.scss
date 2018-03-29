@@ -1,7 +1,7 @@
 // # Content
 
 .content {
-  a {
+  a:not([class*="link"]) {
     @extend .link;
   }
   button:not([class*="button"]) {
@@ -25,7 +25,7 @@
     @extend .heading--medium;
 
     &:not(:first-child) {
-      margin-top: $spacing-unit * 2;
+      margin-top: $spacing-unit * 3;
     }
   }
   h4 {
