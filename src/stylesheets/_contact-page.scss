@@ -1,0 +1,83 @@
+// # Contact Page
+
+.contact-page {
+  .modal & {
+    height: 100vh;
+    position: relative;
+  }
+}
+.contact-page__close {
+  display: none;
+
+  .modal & {
+    display: block;
+    font-weight: 300;
+    font-size: $font-xlarge;
+    line-height: 1;
+    position: absolute;
+    top: $spacing-unit * 4;
+    right: $spacing-unit * 4;
+  }
+}
+.contact-page__info-panel,
+.contact-page__form-panel {
+  .modal & {
+    margin-bottom: 0;
+  }
+}
+.contact-page__info-panel {
+  .modal & {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-medium) {
+      animation: slide-from-left 600ms ease-out;
+    }
+  }
+}
+.contact-page__form-panel {
+  background-color: #fff;
+  overflow: auto;
+
+  @media (min-width: $breakpoint-medium) {
+    order: 2;
+
+    .modal & {
+      animation: slide-from-right 600ms ease-out;
+    }
+  }
+}
+.contact-page__image {
+  background-color: $color-background-shaded;
+  background-image: url(http://placehold.it/1280x400);
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+
+  .modal & {
+    flex-grow: 1;
+  }
+}
+.contact-page__info-content {
+  .modal & {
+    overflow: auto;
+  }
+}
+
+// ## Animations
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
