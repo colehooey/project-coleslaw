@@ -17,6 +17,10 @@
       <h1 class="navigation__title">
         <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
       </h1>
+      <input class="navigation__toggle" id="navigation-toggle" type="checkbox">
+      <label class="navigation__toggle-label" for="navigation-toggle">
+        <span class="offscreen">Toggle navigation</span>
+      </label>
       <nav class="navigation__actions">
         <ul class="navigation__items">
           <li class="navigation__item">
@@ -39,7 +43,9 @@
 <div class="contact-page js-page-content split__container--spacing-none">
   <div class="contact-page__form-panel container--small-padding container--medium-padding@medium container--large-padding@large split--50@medium">
     <h1 class="heading--large">Contact</h1>
-    <button class="button--bare contact-page__close js-modal-close">×</button>
+    <button class="button--bare contact-page__close js-modal-close">
+      <span class="offscreen">Close modal</span>
+    </button>
     <label class="label" for="name-field">Name</label>
     <input class="field" type="text" id="name-field">
     <label class="label" for="company-field">Company</label>

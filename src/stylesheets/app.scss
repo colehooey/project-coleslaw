@@ -20,6 +20,10 @@
 .image--centered {
   margin: auto;
 }
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
 
 // Page-specific Components
 @import "contact-page";
