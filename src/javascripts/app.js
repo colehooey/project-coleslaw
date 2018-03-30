@@ -1,8 +1,7 @@
 // # Modal
 
-// ## Cache values
-const modalTriggerElement = document.getElementsByClassName('js-navigate-to-contact')
-
+const isUsingIE11 = !!navigator.userAgent.match(/Trident\/7\./)
+const modalOpenPageClass = 'modal__page-container'
 
 // ## Methods
 const bindCloseModal = modalElement => {
@@ -12,12 +11,15 @@ const bindCloseModal = modalElement => {
     closeModal(modalElement)
   })
   document.onkeydown = function(event) {
-    if (event.key !== "Escape" && event.key !== "Esc") return
-    closeModal(modalElement)
+    if (event.key === "Escape" || event.key === "Esc") {
+      closeModal(modalElement)
+    }
   }
 }
 
 const closeModal = modalElement => {
+  document.onkeydown = null
+  document.body.classList.remove(modalOpenPageClass)
   modalElement.remove()
 }
 
@@ -41,21 +43,25 @@ const openModal = (modalContent) => {
   modalElement.appendChild(modalContent)
   bindCloseModal(modalElement)
 
-  document.body.classList.add('modal__page-container')
+  const modalFirstHeading = modalElement.querySelectorAll('h1, h2, h3')[0]
+  modalFirstHeading.setAttribute('tabindex', '0')
+
+  document.body.classList.add(modalOpenPageClass)
   document.body.appendChild(modalElement)
+  modalFirstHeading.focus()
 }
 
 const triggerModal = (triggerElem, url) =>
-  fetchContent(url).then(pageContent => {
-    createModal(pageContent)
-  }).catch(error => {
-    console.warn(error)
-  })
+  fetchContent(url)
+    .then(pageContent => createModal(pageContent))
+    .catch(error => console.warn(error))
 
 
 // ## Bind events
 window.onload = () => {
-  if (!modalTriggerElement) return
+  const modalTriggerElement = document.getElementsByClassName('js-navigate-to-contact')
+
+  if (!modalTriggerElement || isUsingIE11) return
 
   modalTriggerElement[0].addEventListener('click', event => {
     event.preventDefault()
