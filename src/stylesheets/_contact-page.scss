@@ -17,6 +17,16 @@
     position: absolute;
     top: $spacing-unit * 4;
     right: $spacing-unit * 4;
+
+    &::before {
+      background-image: url("data:image/svg+xml;utf8,#{$icon-close}");
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 30px;
+      width: 30px;
+    }
   }
 }
 .contact-page__info-panel,
