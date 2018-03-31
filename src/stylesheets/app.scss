@@ -25,5 +25,13 @@
   left: -9999px;
 }
 
+// Carousel
+.carousel__item {
+
+}
+.carousel__item--hidden {
+  display: none;
+}
+
 // Page-specific Components
 @import "contact-page";
