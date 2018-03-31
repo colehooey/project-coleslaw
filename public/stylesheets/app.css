@@ -477,9 +477,8 @@ img {
   margin-bottom: -1.25rem; }
 
 [class*="split--"] {
+  margin-bottom: 1.25rem;
   width: calc(100%); }
-  [class*="split--"]:not(:last-child) {
-    margin-bottom: 1.25rem; }
 
 .split__container > .split--66 {
   margin-bottom: 1.25rem;
@@ -721,6 +720,9 @@ img {
 .modal .contact-page {
   height: 100vh;
   position: relative; }
+  @media (max-width: 600px) {
+    .modal .contact-page {
+      overflow: scroll; } }
 
 .contact-page__close {
   display: none; }
