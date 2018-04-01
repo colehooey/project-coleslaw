@@ -2,16 +2,41 @@
 
 const wrapperClass = 'js-carousel'
 const itemClass = 'js-carousel-item'
-const itemHiddenClass = 'carousel__item--hidden'
+const itemHiddenClass = 'is-hidden'
 const groupSize = window.innerWidth < 600 ? 4 : 8
+const updateDelay = 10 // Seconds
 
 // ## Methods
-const scheduleUpdate = (carouselItemElements, groupNumber = 0) =>{
+const hideItems = (itemElements, callback) => {
+  const removeItem = item => {
+    item.style.display = 'none'
+    callback()
+  }
+
+  itemElements.forEach(item => {
+    item.classList.add(itemHiddenClass)
+    item.addEventListener('transitionend', () => {
+      removeItem(item)
+    }, { once: true })
+  })
+}
+
+const showItems = itemElements => {
+  itemElements.forEach(item => {
+    item.style.display = 'block'
+    window.setTimeout(
+      () => item.classList.remove(itemHiddenClass),
+      60
+    )
+  })
+}
+
+const scheduleUpdate = (carouselItemElements, groupNumber = 0) =>
   window.setTimeout(
     () => updateDisplay(carouselItemElements, groupNumber),
-    10000
+    updateDelay * 1000
   )
-}
+
 const startRotation = carouselElement => {
   const carouselItemElements = carouselElement.getElementsByClassName(itemClass)
 
@@ -24,19 +49,14 @@ const updateDisplay = (carouselItemElements, currentGroup = 0) => {
   const groupEnd = (currentGroup + 1) * groupSize
   const isLastGroup = currentGroup >= groupCount - 1
   const nextGroup = isLastGroup ? 0 : currentGroup + 1
+  const isItemInCurrentGroup = index => index >= groupStart && index < groupEnd
 
   currentGroup = isLastGroup ? 0 : currentGroup
 
-  Array.from(carouselItemElements).forEach((item, index) => {
-    const itemIsInCurrentGroup = index >= groupStart && index < groupEnd
+  const currentGroupItems = Array.from(carouselItemElements).filter((item, index) => isItemInCurrentGroup(index))
+  const otherGroupItems = Array.from(carouselItemElements).filter((item, index) => !isItemInCurrentGroup(index))
 
-    if (itemIsInCurrentGroup) {
-      item.classList.remove(itemHiddenClass)
-    } else {
-      item.classList.add(itemHiddenClass)
-    }
-  })
-
+  hideItems(currentGroupItems, () => showItems(otherGroupItems))
   scheduleUpdate(carouselItemElements, nextGroup)
 }
 
@@ -46,4 +66,4 @@ window.addEventListener('load', () => {
 
   if (!carouselElement) return
   startRotation(carouselElement)
-})
+}, { once: true })

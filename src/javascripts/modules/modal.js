@@ -9,12 +9,12 @@ const bindCloseModal = modalElement => {
 
   closeButtonElement.addEventListener('click', event => {
     closeModal(modalElement)
-  })
-  document.onkeydown = function(event) {
-    if (event.key === "Escape" || event.key === "Esc") {
+  }, { once: true })
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' || event.key === 'Esc') {
       closeModal(modalElement)
     }
-  }
+  }, { once: true });
 }
 
 const closeModal = modalElement => {
@@ -67,4 +67,4 @@ window.addEventListener('load', () => {
     event.preventDefault()
     triggerModal(event.target, '/contact.html')
   })
-})
+}, { once: true })

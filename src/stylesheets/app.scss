@@ -26,11 +26,12 @@
 }
 
 // Carousel
-.carousel__item {
+.js-carousel-item {
+  transition: opacity 400ms;
 
-}
-.carousel__item--hidden {
-  display: none;
+  &.is-hidden {
+    opacity: 0;
+  }
 }
 
 // Page-specific Components
