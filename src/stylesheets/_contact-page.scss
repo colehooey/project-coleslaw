@@ -4,6 +4,10 @@
   .modal & {
     height: 100vh;
     position: relative;
+
+    @media (max-width: $breakpoint-medium) {
+      overflow: scroll;
+    }
   }
 }
 .contact-page__close {

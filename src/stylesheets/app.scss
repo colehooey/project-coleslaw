@@ -25,5 +25,14 @@
   left: -9999px;
 }
 
+// Carousel
+.js-carousel-item {
+  transition: opacity 400ms;
+
+  &.is-hidden {
+    opacity: 0;
+  }
+}
+
 // Page-specific Components
 @import "contact-page";
