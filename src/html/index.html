@@ -72,6 +72,7 @@
 <h4 class="heading--small">Heading Small</h4>
 <h5 class="heading--xsmall">Heading Extra Small</h5>
 <h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
+<p class="lede">Lede — Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
 <p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   {%- endcall %}
 
@@ -91,6 +92,7 @@
   <h4>Heading 4</h4>
   <h5>Heading 5</h5>
   <h6>Heading 6</h6>
+  <p class="lede">Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
   <p><button>Button</button></p>
@@ -99,26 +101,28 @@
 
   <h2 class="heading--large">Form Fields</h1>
   {% call example() -%}
-<label class="label" for="form-field-example">Form Field</label>
-<input class="field" type="text" id="form-field-example">
-<label class="label" for="form-field-example-2">Form Field with Error</label>
-<input class="field has-error" type="text" id="form-field-example-2">
-<label class="label" for="textarea-example">Textarea</label>
-<textarea class="field" id="textarea-example"></textarea>
+<label for="form-field-example">Form Field</label>
+<input type="text" id="form-field-example">
+<label for="form-field-example-2">Form Field with Error</label>
+<input class="has-error" type="text" id="form-field-example-2">
+<label for="textarea-example">Textarea</label>
+<textarea id="textarea-example"></textarea>
   {%- endcall %}
 
   <h2 class="heading--large">Navigation</h1>
   {% call example() -%}
 <header class="navigation">
   <h1 class="navigation__title">
-    <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+    <a class="navigation__title-link" href="#">
+      <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+    </a>
   </h1>
   <nav class="navigation__actions">
     <ul class="navigation__items">
-      <li class="navigation__item is-current-page">
+      <li class="navigation__item">
         <a class="navigation__link" href="#">Page 1</a>
       </li>
-      <li class="navigation__item">
+      <li class="navigation__item current-menu-item">
         <a class="navigation__link" href="#">Page 2</a>
       </li>
       <li class="navigation__item">

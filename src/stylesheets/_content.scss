@@ -1,10 +1,11 @@
 // # Content
 
 .content {
-  a:not([class*="link"]) {
+  a:not([class*="link"]):not([class*="button"]) {
     @extend .link;
   }
-  button:not([class*="button"]) {
+  button:not([class*="button"]),
+  .button {
     @extend .button;
   }
   h1 {
@@ -32,21 +33,21 @@
     @extend .heading--small;
 
     &:not(:first-child) {
-      margin-top: $spacing-unit;
+      margin-top: $spacing-unit * 2;
     }
   }
   h5 {
     @extend .heading--xsmall;
 
     &:not(:first-child) {
-      margin-top: $spacing-unit;
+      margin-top: $spacing-unit * 2;
     }
   }
   h6 {
     @extend .heading--xxsmall;
 
     &:not(:first-child) {
-      margin-top: $spacing-unit;
+      margin-top: $spacing-unit * 2;
     }
   }
   hr {
@@ -61,11 +62,18 @@
     @extend .text--medium;
 
     &:not(:first-child) {
-      margin-top: $spacing-unit;
+      margin-top: $spacing-unit * 2;
     }
   }
   ul {
     @extend .list;
+
+    &:not(:first-child) {
+      margin-top: $spacing-unit * 2;
+    }
+  }
+  .lede {
+    @extend .lede;
 
     &:not(:first-child) {
       margin-top: $spacing-unit * 2;
