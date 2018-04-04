@@ -15,7 +15,9 @@
   <body>
     <header class="navigation">
       <h1 class="navigation__title">
-        <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+        <a class="navigation__title-link" href="#">
+          <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+        </a>
       </h1>
       <input class="navigation__toggle" id="navigation-toggle" type="checkbox">
       <label class="navigation__toggle-label" for="navigation-toggle">
@@ -163,6 +165,7 @@
 <h4 class="heading--small">Heading Small</h4>
 <h5 class="heading--xsmall">Heading Extra Small</h5>
 <h6 class="heading--xxsmall">Heading Extra Extra Small</h6>
+<p class="lede">Lede — Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
 <p class="text--medium">Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   </div>
 <pre class="styleguide-example__markup prettyprint lang-html">
@@ -172,6 +175,7 @@
 &lt;h4 class=&quot;heading--small&quot;&gt;Heading Small&lt;/h4&gt;
 &lt;h5 class=&quot;heading--xsmall&quot;&gt;Heading Extra Small&lt;/h5&gt;
 &lt;h6 class=&quot;heading--xxsmall&quot;&gt;Heading Extra Extra Small&lt;/h6&gt;
+&lt;p class=&quot;lede&quot;&gt;Lede — Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
 &lt;p class=&quot;text--medium&quot;&gt;Text Medium — Donec purus tortor, venenatis id nisi non, ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
 </pre>
 </div>
@@ -204,6 +208,7 @@
   <h4>Heading 4</h4>
   <h5>Heading 5</h5>
   <h6>Heading 6</h6>
+  <p class="lede">Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
   <p>Praesent scelerisque, libero sed <a href="#">lobortis efficitur</a>. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
   <p><button>Button</button></p>
@@ -217,6 +222,7 @@
   &lt;h4&gt;Heading 4&lt;/h4&gt;
   &lt;h5&gt;Heading 5&lt;/h5&gt;
   &lt;h6&gt;Heading 6&lt;/h6&gt;
+  &lt;p class=&quot;lede&quot;&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
   &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
   &lt;p&gt;Praesent scelerisque, libero sed &lt;a href=&quot;#&quot;&gt;lobortis efficitur&lt;/a&gt;. Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.&lt;/p&gt;
   &lt;p&gt;&lt;button&gt;Button&lt;/button&gt;&lt;/p&gt;
@@ -229,20 +235,20 @@
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
-    <label class="label" for="form-field-example">Form Field</label>
-<input class="field" type="text" id="form-field-example">
-<label class="label" for="form-field-example-2">Form Field with Error</label>
-<input class="field has-error" type="text" id="form-field-example-2">
-<label class="label" for="textarea-example">Textarea</label>
-<textarea class="field" id="textarea-example"></textarea>
+    <label for="form-field-example">Form Field</label>
+<input type="text" id="form-field-example">
+<label for="form-field-example-2">Form Field with Error</label>
+<input class="has-error" type="text" id="form-field-example-2">
+<label for="textarea-example">Textarea</label>
+<textarea id="textarea-example"></textarea>
   </div>
 <pre class="styleguide-example__markup prettyprint lang-html">
-&lt;label class=&quot;label&quot; for=&quot;form-field-example&quot;&gt;Form Field&lt;/label&gt;
-&lt;input class=&quot;field&quot; type=&quot;text&quot; id=&quot;form-field-example&quot;&gt;
-&lt;label class=&quot;label&quot; for=&quot;form-field-example-2&quot;&gt;Form Field with Error&lt;/label&gt;
-&lt;input class=&quot;field has-error&quot; type=&quot;text&quot; id=&quot;form-field-example-2&quot;&gt;
-&lt;label class=&quot;label&quot; for=&quot;textarea-example&quot;&gt;Textarea&lt;/label&gt;
-&lt;textarea class=&quot;field&quot; id=&quot;textarea-example&quot;&gt;&lt;/textarea&gt;
+&lt;label for=&quot;form-field-example&quot;&gt;Form Field&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;form-field-example&quot;&gt;
+&lt;label for=&quot;form-field-example-2&quot;&gt;Form Field with Error&lt;/label&gt;
+&lt;input class=&quot;has-error&quot; type=&quot;text&quot; id=&quot;form-field-example-2&quot;&gt;
+&lt;label for=&quot;textarea-example&quot;&gt;Textarea&lt;/label&gt;
+&lt;textarea id=&quot;textarea-example&quot;&gt;&lt;/textarea&gt;
 </pre>
 </div>
 
@@ -253,14 +259,16 @@
   <div class="styleguide-example__preview">
     <header class="navigation">
   <h1 class="navigation__title">
-    <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+    <a class="navigation__title-link" href="#">
+      <img class="navigation__logo" src="http://placehold.it/296x40" alt="Company Name">
+    </a>
   </h1>
   <nav class="navigation__actions">
     <ul class="navigation__items">
-      <li class="navigation__item is-current-page">
+      <li class="navigation__item">
         <a class="navigation__link" href="#">Page 1</a>
       </li>
-      <li class="navigation__item">
+      <li class="navigation__item current-menu-item">
         <a class="navigation__link" href="#">Page 2</a>
       </li>
       <li class="navigation__item">
@@ -279,14 +287,16 @@
 <pre class="styleguide-example__markup prettyprint lang-html">
 &lt;header class=&quot;navigation&quot;&gt;
   &lt;h1 class=&quot;navigation__title&quot;&gt;
-    &lt;img class=&quot;navigation__logo&quot; src=&quot;http://placehold.it/296x40&quot; alt=&quot;Company Name&quot;&gt;
+    &lt;a class=&quot;navigation__title-link&quot; href=&quot;#&quot;&gt;
+      &lt;img class=&quot;navigation__logo&quot; src=&quot;http://placehold.it/296x40&quot; alt=&quot;Company Name&quot;&gt;
+    &lt;/a&gt;
   &lt;/h1&gt;
   &lt;nav class=&quot;navigation__actions&quot;&gt;
     &lt;ul class=&quot;navigation__items&quot;&gt;
-      &lt;li class=&quot;navigation__item is-current-page&quot;&gt;
+      &lt;li class=&quot;navigation__item&quot;&gt;
         &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 1&lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class=&quot;navigation__item&quot;&gt;
+      &lt;li class=&quot;navigation__item current-menu-item&quot;&gt;
         &lt;a class=&quot;navigation__link&quot; href=&quot;#&quot;&gt;Page 2&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&quot;navigation__item&quot;&gt;

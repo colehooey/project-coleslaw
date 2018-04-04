@@ -3,6 +3,11 @@
 $column-spacing-medium: 25px / 2;
 $column-spacing-large: 25px;
 
+// ## Background
+.background--shaded {
+  background-color: $color-background-shaded;
+}
+
 // ## Container
 @mixin container-padding($padding-units) {
   & {
@@ -31,6 +36,17 @@ $column-spacing-large: 25px;
 }
 .container--large-padding {
   @include container-padding(10);
+}
+
+// ## Image
+.image--centered {
+  margin: auto;
+}
+
+// ## Offscreen
+.offscreen {
+  position: absolute;
+  left: -9999px;
 }
 
 // ## Spacing

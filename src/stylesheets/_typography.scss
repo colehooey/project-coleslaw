@@ -71,6 +71,18 @@
   line-height: $leading-xlarge;
 }
 
+ // ## Lede
+ .lede {
+   color: $content-light;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: $leading-medium;
+
+   .theme--dark & {
+     color: $content-xlight;
+   }
+ }
+
 // ## List
 .list {
   padding-left: 1.5em;

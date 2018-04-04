@@ -76,13 +76,25 @@
   font-size: $font-small;
   line-height: $leading-small;
   text-decoration: none;
+  transition: opacity 250ms;
 
   @media (max-width: $breakpoint-medium) {
     font-size: 21px;
   }
-  .navigation__item.is-current-page & {
-    box-shadow: 0 2px 0 $color-action;
+  .navigation__items:hover &:not(:hover) {
+    opacity: .5;
   }
+  .navigation__item.current-menu-item & {
+    box-shadow: 0 2px 0 $color-action;
+    color: $content-dark;
+  }
+}
+.navigation__title {
+  display: block;
+  line-height: 0;
+}
+.navigation__title-link {
+  display: inline-block;
 }
 .navigation__toggle {
   @extend .offscreen;
@@ -119,4 +131,7 @@
   @media (min-width: $breakpoint-medium) {
     display: none;
   }
+}
+label.navigation__toggle-label {
+  margin-top: 0; // Override default label style
 }

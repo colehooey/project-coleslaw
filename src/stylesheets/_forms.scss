@@ -1,7 +1,9 @@
 // # Forms
 
 // ## Input
-.field {
+input[type=email],
+input[type=text],
+textarea {
   background-color: $color-background-shaded;
   border: solid 1px $color-background-shaded;
   border-radius: 0;
@@ -22,7 +24,7 @@
 }
 
 // ## Label
-.label {
+label {
   color: $content-light;
   display: inline-block;
   font-size: $font-medium;
