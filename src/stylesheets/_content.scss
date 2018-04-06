@@ -65,6 +65,9 @@
       margin-top: $spacing-unit * 2;
     }
   }
+  p + p {
+    margin-top: $spacing-unit * 5;
+  }
   ul {
     @extend .list;
 

@@ -59,6 +59,10 @@
   }
   .theme--dark & {
     color: #fff;
+
+    &::after {
+      color: $color-action;
+    }
   }
   a:hover .theme--dark &,
   a:active .theme--dark & {
@@ -100,5 +104,8 @@
   .theme--dark &:hover,
   .theme--dark &:active {
     color: #fff;
+  }
+  .theme--dark &::after {
+    color: $color-action;
   }
 }

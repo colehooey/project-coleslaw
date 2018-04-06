@@ -79,13 +79,13 @@
 </div>
 
 
-  <h2 class="heading--large">Clickable Sections</h1>
+  <h2 class="heading--large">Clickable Sections</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
     <div class="container--large">
   <div class="split__container">
-    <a class="background--shaded container--medium-padding split--33@large" href="#">
+    <a class="background--shaded padding--medium split--33@large" href="#">
       <div class="content">
         <h3>The Content</h3>
         <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
@@ -94,7 +94,7 @@
         </p>
       </div>
     </a>
-    <a class="background--shaded container--medium-padding split--33@large" href="#">
+    <a class="background--shaded padding--medium split--33@large" href="#">
       <div class="content">
         <h3>The Content</h3>
         <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.</p>
@@ -104,7 +104,7 @@
       </div>
     </a>
     <a class="split--33@large" href="#">
-      <div class="container--medium-padding theme--dark">
+      <div class="padding--medium theme--dark">
         <div class="content">
           <h3>The Content</h3>
           <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
@@ -120,7 +120,7 @@
 <pre class="styleguide-example__markup prettyprint lang-html">
 &lt;div class=&quot;container--large&quot;&gt;
   &lt;div class=&quot;split__container&quot;&gt;
-    &lt;a class=&quot;background--shaded container--medium-padding split--33@large&quot; href=&quot;#&quot;&gt;
+    &lt;a class=&quot;background--shaded padding--medium split--33@large&quot; href=&quot;#&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
         &lt;h3&gt;The Content&lt;/h3&gt;
         &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
@@ -129,7 +129,7 @@
         &lt;/p&gt;
       &lt;/div&gt;
     &lt;/a&gt;
-    &lt;a class=&quot;background--shaded container--medium-padding split--33@large&quot; href=&quot;#&quot;&gt;
+    &lt;a class=&quot;background--shaded padding--medium split--33@large&quot; href=&quot;#&quot;&gt;
       &lt;div class=&quot;content&quot;&gt;
         &lt;h3&gt;The Content&lt;/h3&gt;
         &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula.&lt;/p&gt;
@@ -139,7 +139,7 @@
       &lt;/div&gt;
     &lt;/a&gt;
     &lt;a class=&quot;split--33@large&quot; href=&quot;#&quot;&gt;
-      &lt;div class=&quot;container--medium-padding theme--dark&quot;&gt;
+      &lt;div class=&quot;padding--medium theme--dark&quot;&gt;
         &lt;div class=&quot;content&quot;&gt;
           &lt;h3&gt;The Content&lt;/h3&gt;
           &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;
@@ -155,7 +155,7 @@
 </div>
 
 
-  <h2 class="heading--large">Headings and Paragraphs</h1>
+  <h2 class="heading--large">Headings and Paragraphs</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -181,23 +181,29 @@
 </div>
 
 
-  <h2 class="heading--large">Container</h1>
+  <h2 class="heading--large">Container</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
-    <div class="container--large">
-<img src="http://placehold.it/3000x800" alt="">
+    <div class="container--large background--shaded">
+  Large container
+</div>
+<div class="container--xlarge background--shaded spacing--top-medium">
+  Extra large container
 </div>
   </div>
 <pre class="styleguide-example__markup prettyprint lang-html">
-&lt;div class=&quot;container--large&quot;&gt;
-&lt;img src=&quot;http://placehold.it/3000x800&quot; alt=&quot;&quot;&gt;
+&lt;div class=&quot;container--large background--shaded&quot;&gt;
+  Large container
+&lt;/div&gt;
+&lt;div class=&quot;container--xlarge background--shaded spacing--top-medium&quot;&gt;
+  Extra large container
 &lt;/div&gt;
 </pre>
 </div>
 
 
-  <h2 class="heading--large">Content Area</h1>
+  <h2 class="heading--large">Content Area</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -231,7 +237,7 @@
 </div>
 
 
-  <h2 class="heading--large">Form Fields</h1>
+  <h2 class="heading--large">Form Fields</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -253,7 +259,63 @@
 </div>
 
 
-  <h2 class="heading--large">Navigation</h1>
+  <h2 class="heading--large">Hidden</h2>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="hidden">Hidden</div>
+<div class="hidden@medium">Hidden at medium breakpoint</div>
+<div class="hidden@large">Hidden at large breakpoint</div>
+<div class="hidden@below-medium">Hidden at medium breakpoint or smaller</div>
+<div class="hidden@below-large">Hidden at large breakpoint or smaller</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;hidden&quot;&gt;Hidden&lt;/div&gt;
+&lt;div class=&quot;hidden@medium&quot;&gt;Hidden at medium breakpoint&lt;/div&gt;
+&lt;div class=&quot;hidden@large&quot;&gt;Hidden at large breakpoint&lt;/div&gt;
+&lt;div class=&quot;hidden@below-medium&quot;&gt;Hidden at medium breakpoint or smaller&lt;/div&gt;
+&lt;div class=&quot;hidden@below-large&quot;&gt;Hidden at large breakpoint or smaller&lt;/div&gt;
+</pre>
+</div>
+
+
+  <h2 class="heading--large">Image</h2>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div>
+  <img class="image--centered" src="http://placehold.it/300x200" alt="">
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div&gt;
+  &lt;img class=&quot;image--centered&quot; src=&quot;http://placehold.it/300x200&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+
+  <h2 class="heading--large">Responsive Image</h2>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <picture>
+  <source srcset="http://placehold.it/2560x1280" media="(min-width: 600px) and (min-resolution: 192dpi)">
+  <source srcset="http://placehold.it/750x375" media="(max-width: 600px)">
+  <img src="http://placehold.it/1280x640" alt="">
+</picture>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;picture&gt;
+  &lt;source srcset=&quot;http://placehold.it/2560x1280&quot; media=&quot;(min-width: 600px) and (min-resolution: 192dpi)&quot;&gt;
+  &lt;source srcset=&quot;http://placehold.it/750x375&quot; media=&quot;(max-width: 600px)&quot;&gt;
+  &lt;img src=&quot;http://placehold.it/1280x640&quot; alt=&quot;&quot;&gt;
+&lt;/picture&gt;
+</pre>
+</div>
+
+
+  <h2 class="heading--large">Navigation</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -315,7 +377,65 @@
 </div>
 
 
-  <h2 class="heading--large">Spacing</h1>
+  <h2 class="heading--large">Padding</h2>
+  
+<div class="styleguide-example">
+  <div class="styleguide-example__preview">
+    <div class="padding--small background--shaded">
+  Small padding
+</div>
+<br>
+<div class="padding--medium background--shaded">
+  Medium padding
+</div>
+<br>
+<div class="padding--large background--shaded">
+  Large padding
+</div>
+<br>
+<div class="padding--vertical-medium background--shaded">
+  Medium vertical padding
+</div>
+<br>
+<div class="padding--horizontal-large background--shaded">
+  Large horizontal padding
+</div>
+<br>
+<div class="padding--small padding--large@medium background--shaded">
+  Small padding <br>
+  Large padding on medium-sized screens and greater
+</div>
+  </div>
+<pre class="styleguide-example__markup prettyprint lang-html">
+&lt;div class=&quot;padding--small background--shaded&quot;&gt;
+  Small padding
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;padding--medium background--shaded&quot;&gt;
+  Medium padding
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;padding--large background--shaded&quot;&gt;
+  Large padding
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;padding--vertical-medium background--shaded&quot;&gt;
+  Medium vertical padding
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;padding--horizontal-large background--shaded&quot;&gt;
+  Large horizontal padding
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;padding--small padding--large@medium background--shaded&quot;&gt;
+  Small padding &lt;br&gt;
+  Large padding on medium-sized screens and greater
+&lt;/div&gt;
+</pre>
+</div>
+
+
+  <h2 class="heading--large">Spacing</h2>
   
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
@@ -358,7 +478,7 @@
 
 
 
-  <h2 class="heading--large">Split Layout</h1>
+  <h2 class="heading--large">Split Layout</h2>
   <p>Available sizes:</p>
   <ul>
     <li>split--66</li>
@@ -372,7 +492,7 @@
 <div class="styleguide-example">
   <div class="styleguide-example__preview">
     <div class="container--large">
-  <div class="split__container">
+  <div class="split__container--vertically-centered">
     <div class="split--33@large content">
       <h2>The Content</h2>
       <p>Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.</p>
@@ -410,7 +530,7 @@
   </div>
 <pre class="styleguide-example__markup prettyprint lang-html">
 &lt;div class=&quot;container--large&quot;&gt;
-  &lt;div class=&quot;split__container&quot;&gt;
+  &lt;div class=&quot;split__container--vertically-centered&quot;&gt;
     &lt;div class=&quot;split--33@large content&quot;&gt;
       &lt;h2&gt;The Content&lt;/h2&gt;
       &lt;p&gt;Donec purus tortor, venenatis id nisi non, dignissim egestas ligula. Praesent scelerisque, libero sed lobortis efficitur.&lt;/p&gt;

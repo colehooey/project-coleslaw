@@ -26,6 +26,11 @@
 .frm_button_submit {
   @extend .button;
 }
+.frm_form_field {
+  & + & {
+    margin-top: $spacing-unit * 3;
+  }
+}
 .frm_hidden,
 .frm_screen_reader {
   @extend .offscreen;
