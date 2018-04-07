@@ -65,9 +65,10 @@
       margin-top: $spacing-unit * 2;
     }
   }
-  p + p {
+  p + p:not(.a) { // :not added to increase specificy
     margin-top: $spacing-unit * 5;
   }
+  ol,
   ul {
     @extend .list;
 

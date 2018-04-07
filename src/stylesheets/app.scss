@@ -3,7 +3,7 @@
 // ## Components
 @import "variables";
 @import "fonts";
-@import "page";
+@import "reset";
 @import "typography";
 @import "actions";
 @import "content";
@@ -12,8 +12,31 @@
 @import "theme";
 @import "forms";
 @import "modal";
+@import "contact-page";
 
-// ## Carousel
+// ## Uncategorized
+
+// ### Footer
+.footer {
+  font-weight: bold;
+  padding: $spacing-unit * 2;
+  text-align: center;
+
+  &.theme--dark {
+    border-top: 1px solid #4A535C;
+    color: #fff;
+  }
+}
+
+// ### Homepage
+.homepage-hero-image {
+  @media (min-width: $breakpoint-large) {
+    position: relative;
+    right: -25px;
+  }
+}
+
+// ### Carousel
 .js-carousel-item {
   transition: opacity 400ms;
 
@@ -22,9 +45,15 @@
   }
 }
 
-// ## Wordpress overrides
+// ### Wordpress overrides
 .frm_button_submit {
   @extend .button;
+}
+.frm_forms:not(:first-child) {
+  margin-top: $spacing-unit * 3;
+}
+.frm_error_style {
+  color: $color-warning;
 }
 .frm_form_field {
   & + & {
@@ -34,6 +63,9 @@
 .frm_hidden,
 .frm_screen_reader {
   @extend .offscreen;
+}
+.frm_submit {
+  margin-top: $spacing-unit * 5;
 }
 .navigation__actions {
   ul {
@@ -46,6 +78,3 @@
     @extend .navigation__link;
   }
 }
-
-// ## Page-specific Components
-@import "contact-page";

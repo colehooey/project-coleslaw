@@ -24,17 +24,23 @@ const closeModal = modalElement => {
 }
 
 const createModal = content => {
-  const sourcePageContent = document.createElement('div')
-
-  // Get page content
+  var sourcePageContent = document.createElement('div')
   sourcePageContent.innerHTML = content
-  const modalElementContent = sourcePageContent.getElementsByClassName('js-page-content')[0]
+  const scriptElements = sourcePageContent.querySelectorAll('script[src]')
 
-  openModal(modalElementContent)
+  scriptElements.forEach(scriptElement => {
+    const script = document.createElement('script');
+    script.src = scriptElement.getAttribute('src');
+    document.body.appendChild(script);
+  })
+  sourcePageContent = sourcePageContent.getElementsByClassName('js-page-content')[0]
+  debugger
+  openModal(sourcePageContent)
 }
 
 const fetchContent = url =>
-  fetch(url).then(response => response.text())
+  fetch(url, { credentials: 'same-origin' })
+    .then(response => response.text())
 
 const openModal = (modalContent) => {
   const modalElement = document.createElement('div')
@@ -59,7 +65,6 @@ const triggerModal = (triggerElem, url) =>
 // ## Bind events
 window.addEventListener('load', () => {
   const modalTriggerElements = document.querySelectorAll('[href*="/contact"]')
-
   if (!modalTriggerElements.length || isUsingIE11) return
 
   Array.from(modalTriggerElements).forEach(modalTrigger => {
@@ -67,7 +72,7 @@ window.addEventListener('load', () => {
 
     modalTrigger.addEventListener('click', event => {
       event.preventDefault()
-      triggerModal(event.target, relativeUrl) // Get value from href
+      triggerModal(event.target, relativeUrl)
     })
   })
 }, { once: true })
