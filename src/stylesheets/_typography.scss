@@ -24,6 +24,12 @@
   a:active & {
     color: $color-action-xdark;
   }
+  &:target::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+  }
   .theme--dark &,
   a:hover .theme--dark &,
   a:active .theme--dark & {
@@ -56,6 +62,9 @@
   font-weight: 300;
   line-height: $leading-medium;
 
+  @media (max-width: $breakpoint-medium) {
+    font-size: $font-medium - 5px;
+  }
   .theme--dark & {
     color: $content-xlight;
   }
@@ -64,11 +73,19 @@
   @extend %heading;
   font-size: $font-large;
   line-height: $leading-large;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: $font-large - 5px;
+  }
 }
 .heading--xlarge {
   @extend %heading;
   font-size: $font-xlarge;
   line-height: $leading-xlarge;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: $font-xlarge - 5px;
+  }
 }
 
  // ## Lede

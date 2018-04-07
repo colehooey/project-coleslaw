@@ -5,7 +5,7 @@ const itemClass = 'js-carousel-item'
 const itemHiddenClass = 'is-hidden'
 const animationDuration = 400 // Milliseconds
 const groupSize = window.innerWidth < 600 ? 4 : 8
-const updateDelay = 10 // Seconds
+const updateDelay = 3 // Seconds
 
 // ## Methods
 const hideItems = (itemElements, callback) => {

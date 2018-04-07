@@ -56,15 +56,18 @@ const triggerModal = (triggerElem, url) =>
     .then(pageContent => createModal(pageContent))
     .catch(error => console.warn(error))
 
-
 // ## Bind events
 window.addEventListener('load', () => {
-  const modalTriggerElement = document.getElementsByClassName('js-navigate-to-contact')
+  const modalTriggerElements = document.querySelectorAll('[href*="/contact"]')
 
-  if (!modalTriggerElement || isUsingIE11) return
+  if (!modalTriggerElements.length || isUsingIE11) return
 
-  modalTriggerElement[0].addEventListener('click', event => {
-    event.preventDefault()
-    triggerModal(event.target, '/contact.html')
+  Array.from(modalTriggerElements).forEach(modalTrigger => {
+    const relativeUrl = modalTrigger.getAttribute('href').replace(/^.*\/\/[^\/]+/, '')
+
+    modalTrigger.addEventListener('click', event => {
+      event.preventDefault()
+      triggerModal(event.target, relativeUrl) // Get value from href
+    })
   })
 }, { once: true })
