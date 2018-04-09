@@ -10,11 +10,13 @@ $column-spacing-large: 25px;
 
 // ## Container
 .container--xlarge {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: $width-xlarge;
 }
 .container--large {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: $width-large;
 }
 
@@ -45,7 +47,11 @@ $column-spacing-large: 25px;
 
 // ## Image
 .image--centered {
-  margin: auto;
+  &,
+  & > img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // ## Offscreen
