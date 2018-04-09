@@ -36,12 +36,21 @@
   }
 }
 .homepage-partner-logo {
+  display: block;
+}
+.homepage-partner-logo img {
+  margin: auto;
+  max-height: 50px;
+  max-width: 150px;
   max-width: 150px;
   max-height: 50px;
 }
 
 // ### Carousel
 .js-carousel-item {
+  align-items: center;
+  display: flex;
+  height: 50px;
   transition: opacity 400ms;
 
   &.is-hidden {
@@ -56,6 +65,7 @@
 .frm_forms:not(:first-child) {
   margin-top: $spacing-unit * 3;
 }
+.frm_error,
 .frm_error_style {
   color: $color-warning;
 }
